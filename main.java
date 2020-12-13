@@ -1,10 +1,7 @@
 public class main {
     public static void main(String[] args)
     {
-        String username = args[0];
-        String password = args[1];
-
-        JdbcDatabase db = new JdbcDatabase(username, password);
+        RegistrationSystem db = new RegistrationSystem(args[0], args[1]);
         db.run();
     }
 }
